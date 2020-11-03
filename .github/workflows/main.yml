@@ -17,7 +17,6 @@ jobs:
       
       - name: Install and test
         run: |
-          yarn config set registry http://npm.util.k8s.aapedb2.com:4873/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}
           yarn install
           yarn test
         env:
