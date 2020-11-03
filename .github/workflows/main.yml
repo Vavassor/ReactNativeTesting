@@ -21,3 +21,4 @@ jobs:
           yarn test
         env:
           CI: true
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
